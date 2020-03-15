@@ -44,15 +44,15 @@ $(function() {
   // });
 
   $('.zx-main-slider .owl-Carousel').owlCarousel({
-    animateOut: 'fadeOut',
-    //animateIn: 'flipInX',
-    autoPlay:true,
-    items:1,
-    loop:true,
-    margin:30,
-    stagePadding:30,
-    smartSpeed:450,
-    rtl:true,
+  autoPlay:true,
+  items:1,
+  loop:true,
+  margin:10,
+  stagePadding:0,
+  smartSpeed:450,
+  rtl:true,
+  nav:false,
+  dots:true,
 });
 $('.categories .zx-contain .owl-Carousel').owlCarousel({
   autoPlay:false,
@@ -66,7 +66,7 @@ $('.categories .zx-contain .owl-Carousel').owlCarousel({
   dots:false,
   responsive:{
     0:{
-        items:1,
+        items:2,
         loop:true,
         dots:true
     },
@@ -119,7 +119,7 @@ $('.sponsor .sponsor-logos .owl-Carousel').owlCarousel({
   dots:false,
   responsive:{
     0:{
-        items:1,
+        items:2,
         loop:true,
         dots:true
     },
@@ -156,6 +156,9 @@ $(".nav-bar .for-mobile .menu").on("click", function() {
   $(".fixed-menu-container").fadeIn();
   $(".fixed-menu").animate({"right":"0"});
   $("html, body").css({"overflow-y":"hidden"});
+});
+$(".fixed-menu-container .fixed-menu .nav-list").on("click", function(e) {
+  e.stopPropagation();
 });
 $(".fixed-menu-container .fixed-menu .nav-list .close").on("click", function() {
   $(".fixed-menu-container").fadeOut();
