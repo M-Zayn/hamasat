@@ -1430,7 +1430,7 @@ LODEARS
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 30px 0 30px 0;
+    margin: 20px 0 20px 0;
   }
   .footer .contact-us .zx-contain .contact-info h3 {
     margin: 0 0 12px 0;
@@ -1469,7 +1469,7 @@ LODEARS
     margin: 0 0 12px 0;
   }
   .footer .contact-us .zx-contain .contact-info .icons {
-    margin: 16px 0 0 0;
+    margin: 26px 0 0 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
