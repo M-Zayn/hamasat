@@ -57,13 +57,14 @@ LODEARS
           align-items: center;
 }
 
-.upper-bar .lang {
-  cursor: pointer;
+.upper-bar a {
+  text-decoration: none;
+  color: #8b8d92;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
-.upper-bar .lang:hover {
+.upper-bar a:hover {
   color: #008bff;
 }
 
@@ -134,6 +135,9 @@ LODEARS
   padding: 18px 0 0 0;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(22, 22, 22, 0.1);
+          box-shadow: 0px 0px 8px 0px rgba(22, 22, 22, 0.1);
+  background-color: #fff;
 }
 
 .nav-bar .zx-contain {
@@ -328,10 +332,9 @@ LODEARS
 }
 
 .nav-bar .nav-list {
-  font-family: bold;
+  font-family: reg;
   font-size: 16px;
-  -webkit-box-shadow: 0px 0px 8px 0px rgba(22, 22, 22, 0.1);
-          box-shadow: 0px 0px 8px 0px rgba(22, 22, 22, 0.1);
+  border: 1px solid #f4f4f4;
   margin: 26px 0 0 0;
 }
 
@@ -356,16 +359,18 @@ LODEARS
 .nav-bar .nav-list ul a {
   text-decoration: none;
   color: #252933;
-}
-
-.nav-bar .nav-list ul li {
-  padding: 0 0 0 24px;
-  margin: 0;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
 
-.nav-bar .nav-list ul li:hover {
+.nav-bar .nav-list ul li {
+  padding: 0;
+  margin: 0 0 0 24px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.nav-bar .nav-list ul li:hover a {
   color: #008AFF;
 }
 
@@ -413,7 +418,7 @@ LODEARS
 
 .categories a {
   text-decoration: none;
-  font-family: bold;
+  font-family: reg;
   font-size: 17px;
   color: #252933;
 }
@@ -531,12 +536,16 @@ LODEARS
   margin: 0;
 }
 
-.sp-offers .zx-offers-header p {
+.sp-offers .zx-offers-header a {
   font-family: reg;
   font-size: 14px;
   color: #a8afb1;
   padding: 0;
   margin: 0;
+}
+
+.sp-offers .zx-offers-header a:hover {
+  color: #008bff;
 }
 
 .sp-offers .zx-offers-header:hover {
@@ -571,6 +580,11 @@ LODEARS
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.sp-offers .zx-card .img-container img {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
@@ -626,7 +640,7 @@ LODEARS
 }
 
 .sp-offers .zx-card .zx-card-info h4 {
-  font-family: bold;
+  font-family: reg;
   font-size: 15px;
   color: #252933;
   line-height: 1.333;
@@ -641,7 +655,7 @@ LODEARS
 .sp-offers .zx-card .zx-card-info .new-price, .sp-offers .zx-card .zx-card-info .old-price {
   display: block;
   padding: 0 6px;
-  font-family: bold;
+  font-family: reg;
   font-size: 16px;
   line-height: 1.2;
 }
@@ -659,8 +673,13 @@ LODEARS
   opacity: .6;
 }
 
+.sp-offers .zx-card:hover .img-container img {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+}
+
 .sp-offers .zx-card:hover .img-container .overlay {
-  opacity: 1;
+  opacity: 0;
 }
 
 .sp-offers .zx-card:hover .img-container .overlay .offer {
@@ -739,7 +758,7 @@ LODEARS
   margin: 0;
 }
 
-.sponsor .zx-offers-header p {
+.sponsor .zx-offers-header a {
   font-family: reg;
   font-size: 14px;
   color: #a8afb1;
@@ -905,12 +924,6 @@ LODEARS
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
   margin: 60px 0 60px 0;
 }
 
@@ -1060,13 +1073,35 @@ LODEARS
   .zx-search-popup {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
     z-index: 9999;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+  }
+  .zx-search-popup .close {
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: #008bff;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: .9;
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .zx-search-popup .zx-search-form {
     width: 80%;
@@ -1197,13 +1232,13 @@ LODEARS
     color: #252933;
   }
   .fixed-menu-container .fixed-menu .nav-list .user-info .zx-on-card, .fixed-menu-container .fixed-menu .nav-list .user-info .account, .fixed-menu-container .fixed-menu .nav-list .user-info .fav {
-    width: 36px;
-    height: 36px;
+    width: 45px;
+    height: 45px;
     border-style: solid;
     border-width: 1px;
     border-color: #ececec;
     border-radius: 50%;
-    margin: 0 2px;
+    margin: 0 6px;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1218,7 +1253,7 @@ LODEARS
     transition: all .5s ease-in-out;
   }
   .fixed-menu-container .fixed-menu .nav-list .user-info .zx-on-card i, .fixed-menu-container .fixed-menu .nav-list .user-info .account i, .fixed-menu-container .fixed-menu .nav-list .user-info .fav i {
-    font-size: 12px;
+    font-size: 15px;
   }
   .fixed-menu-container .fixed-menu .nav-list .user-info .zx-on-card span, .fixed-menu-container .fixed-menu .nav-list .user-info .account span, .fixed-menu-container .fixed-menu .nav-list .user-info .fav span {
     width: 12px;
@@ -1246,12 +1281,6 @@ LODEARS
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -1260,10 +1289,10 @@ LODEARS
     font-family: reg;
   }
   .fixed-menu-container .fixed-menu .nav-list ul li {
-    padding: 0 0 6px 0;
+    padding: 0 0 9px 0;
   }
-  .fixed-menu-container .fixed-menu .nav-list ul li .lang {
-    border-bottom: 1px solid #CCC;
+  .nav-bar {
+    padding: 18px 0 18px 0;
   }
   .nav-bar .zx-contain {
     -webkit-box-pack: center;
@@ -1297,6 +1326,52 @@ LODEARS
     outline: none;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
+  }
+  .nav-bar .for-mobile .zx-on-card {
+    text-decoration: none;
+    color: #FFF;
+    width: 38px;
+    height: 38px;
+    background-color: #008bff;
+    border-radius: 50%;
+    margin: 12px 6px 6px 6px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  .nav-bar .for-mobile .zx-on-card i {
+    font-size: 12px;
+  }
+  .nav-bar .for-mobile .zx-on-card span {
+    width: 12px;
+    height: 12px;
+    font-family: reg;
+    font-size: 9px;
+    line-height: 1.5;
+    color: black;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .nav-bar .zx-search-form {
     display: none;
@@ -1344,7 +1419,7 @@ LODEARS
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 12px 0;
+    padding: 20px 0;
   }
   .footer .subscribe-bar .zx-contain h3 {
     margin: 6px 0;
@@ -1360,8 +1435,30 @@ LODEARS
     margin: 0 0 12px 0;
     cursor: pointer;
   }
+  .footer .contact-us .zx-contain .contact-info h3::before {
+    content: '\f104';
+    color: #FFF;
+    -webkit-transition: all .25s;
+    transition: all .25s;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    right: -6px;
+  }
   .footer .contact-us .zx-contain .contact-info h3.active {
     color: #008bff;
+  }
+  .footer .contact-us .zx-contain .contact-info h3.active::before {
+    content: '\f107';
+    color: #008bff;
+    -webkit-transition: all .25s;
+    transition: all .25s;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    right: -6px;
   }
   .footer .contact-us .zx-contain .contact-info ul {
     display: none;
@@ -1372,6 +1469,9 @@ LODEARS
   }
   .footer .contact-us .zx-contain .contact-info .icons {
     margin: 16px 0 0 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer .copyright .zx-contain {
     height: auto;
@@ -1447,6 +1547,12 @@ LODEARS
   }
   .sp-offers .zx-offers-header p {
     font-size: 13px;
+  }
+  .sp-offers .zx-card .zx-card-info h4 {
+    text-align: center;
+  }
+  .sp-offers .zx-card .zx-card-info .price {
+    text-align: center;
   }
   .footer .subscribe-bar .zx-contain h3 {
     font-size: 14px;
