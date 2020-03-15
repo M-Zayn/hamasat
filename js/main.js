@@ -157,7 +157,7 @@ $(".nav-bar .for-mobile .menu").on("click", function() {
   $(".fixed-menu").animate({"right":"0"});
   $("html, body").css({"overflow-y":"hidden"});
 });
-$(".fixed-menu-container .fixed-menu .nav-list").on("click", function(e) {
+$(".fixed-menu-container .fixed-menu").on("click", function(e) {
   e.stopPropagation();
 });
 $(".fixed-menu-container .fixed-menu .nav-list .close").on("click", function() {
