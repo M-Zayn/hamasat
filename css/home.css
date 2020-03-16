@@ -244,6 +244,7 @@ LODEARS
           align-items: center;
   font-family: reg;
   font-size: 14px;
+  position: relative;
 }
 
 .nav-bar .user-info a {
@@ -255,6 +256,7 @@ LODEARS
   padding-left: 18px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+  position: relative;
 }
 
 .nav-bar .user-info .account i {
@@ -263,6 +265,39 @@ LODEARS
 
 .nav-bar .user-info .account:hover {
   color: #008bff;
+}
+
+.nav-bar .user-info .account:hover + .log-in {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-bar .user-info .log-in {
+  width: 100px;
+  height: 60px;
+  position: absolute;
+  top: 40px;
+  right: -4px;
+  background-color: #008bff;
+  color: #FFF;
+  border-radius: 5px;
+  padding: 8px 12px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.nav-bar .user-info .log-in a {
+  text-decoration: none;
+  color: #FFF;
+  display: block;
+  font-family: reg;
+}
+
+.nav-bar .user-info .log-in:hover {
+  opacity: 1;
+  visibility: visible;
 }
 
 .nav-bar .user-info .fav {
@@ -898,9 +933,16 @@ LODEARS
   line-height: 1.643;
 }
 
+.footer .subscribe-bar .zx-contain .e-mail button {
+  background: transparent;
+  border: none;
+}
+
 .footer .subscribe-bar .zx-contain .e-mail i {
   font-size: 16px;
   color: #008bff;
+  width: 15px;
+  height: 16px;
   position: absolute;
   left: 28px;
   top: 50%;
