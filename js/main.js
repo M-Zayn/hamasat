@@ -9,7 +9,7 @@ $(window).on("load", function () {
   });
 });
 
-  AOS.init();
+  // AOS.init();
   // new WOW().init();
 $(function() {
 
