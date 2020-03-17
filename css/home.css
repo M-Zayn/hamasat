@@ -1433,34 +1433,32 @@ LODEARS
   .footer .contact-us .zx-contain .contact-info h3 {
     margin: 0 0 12px 0;
     cursor: pointer;
+    text-align: center;
   }
-  .footer .contact-us .zx-contain .contact-info h3::before {
+  .footer .contact-us .zx-contain .contact-info h3::after {
     content: '\f104';
     color: #FFF;
     -webkit-transition: all .25s;
     transition: all .25s;
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
-    position: absolute;
-    top: 0;
-    right: 190px;
+    padding: 0 6px 0 0;
   }
   .footer .contact-us .zx-contain .contact-info h3.active {
     color: #008bff;
   }
-  .footer .contact-us .zx-contain .contact-info h3.active::before {
+  .footer .contact-us .zx-contain .contact-info h3.active::after {
     content: '\f107';
     color: #008bff;
     -webkit-transition: all .25s;
     transition: all .25s;
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
-    position: absolute;
-    top: 0;
-    right: 190px;
+    padding: 0 6px 0 0;
   }
   .footer .contact-us .zx-contain .contact-info ul {
     display: none;
+    text-align: center;
   }
   .footer .contact-us .zx-contain .contact-info ul li {
     font-size: 14px;
@@ -1571,4 +1569,3 @@ LODEARS
   }
 }
 
-/*# sourceMappingURL=home.css.map */
