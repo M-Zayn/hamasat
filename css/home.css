@@ -761,11 +761,11 @@ LODEARS
 
 /* ------ panners end ------ */
 /* ------ sponsor start ------ */
-.sponsor a {
+.co-companies a {
   text-decoration: none;
 }
 
-.sponsor .zx-offers-header {
+.co-companies .zx-offers-header {
   width: 100%;
   height: 48px;
   padding: 0 28px;
@@ -785,7 +785,7 @@ LODEARS
   transition: all .5s ease-in-out;
 }
 
-.sponsor .zx-offers-header h3 {
+.co-companies .zx-offers-header h3 {
   font-family: bold;
   font-size: 18px;
   color: #252933;
@@ -793,7 +793,7 @@ LODEARS
   margin: 0;
 }
 
-.sponsor .zx-offers-header a {
+.co-companies .zx-offers-header a {
   font-family: reg;
   font-size: 14px;
   color: #a8afb1;
@@ -801,12 +801,12 @@ LODEARS
   margin: 0;
 }
 
-.sponsor .zx-offers-header:hover {
+.co-companies .zx-offers-header:hover {
   border-right: 6px solid #008bff;
   padding: 0 25px;
 }
 
-.sponsor .sponsor-logos {
+.co-companies .companies-logos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -819,7 +819,7 @@ LODEARS
   margin: 10px 0 0 0;
 }
 
-.sponsor .sponsor-logos .sponsor-logo {
+.co-companies .companies-logos .company-logo {
   width: 156px;
   height: 156px;
   border-style: solid;
@@ -838,7 +838,7 @@ LODEARS
   transition: all .5s ease-in-out;
 }
 
-.sponsor .sponsor-logos .sponsor-logo:hover {
+.co-companies .companies-logos .company-logo:hover {
   opacity: .6;
 }
 
@@ -1243,82 +1243,37 @@ LODEARS
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
-    padding: 0 30px 0 0;
   }
   .fixed-menu-container .fixed-menu .nav-list a {
     text-decoration: none;
     color: #333;
   }
-  .fixed-menu-container .fixed-menu .nav-list .close {
-    position: absolute;
-    top: 16px;
-    left: 26px;
+  .fixed-menu-container .fixed-menu .nav-list .nav-list-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #008bff;
+    color: #FFF;
+    padding: 0 30px;
+  }
+  .fixed-menu-container .fixed-menu .nav-list .nav-list-header p {
+    font-family: reg;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  .fixed-menu-container .fixed-menu .nav-list .nav-list-header .close {
     color: #000;
     opacity: .6;
-  }
-  .fixed-menu-container .fixed-menu .nav-list .user-info {
-    margin: 50px 0 0 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-family: reg;
-    font-size: 14px;
-  }
-  .fixed-menu-container .fixed-menu .nav-list .user-info a {
-    text-decoration: none;
-    color: #252933;
-  }
-  .fixed-menu-container .fixed-menu .nav-list .user-info .zx-on-card, .fixed-menu-container .fixed-menu .nav-list .user-info .account, .fixed-menu-container .fixed-menu .nav-list .user-info .fav {
-    width: 45px;
-    height: 45px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #ececec;
-    border-radius: 50%;
-    margin: 0 6px;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-  }
-  .fixed-menu-container .fixed-menu .nav-list .user-info .zx-on-card i, .fixed-menu-container .fixed-menu .nav-list .user-info .account i, .fixed-menu-container .fixed-menu .nav-list .user-info .fav i {
-    font-size: 15px;
-  }
-  .fixed-menu-container .fixed-menu .nav-list .user-info .zx-on-card span, .fixed-menu-container .fixed-menu .nav-list .user-info .account span, .fixed-menu-container .fixed-menu .nav-list .user-info .fav span {
-    width: 12px;
-    height: 12px;
-    font-family: reg;
-    font-size: 9px;
-    line-height: 1.5;
-    color: white;
-    background-color: #008bff;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    font-size: 16px;
   }
   .fixed-menu-container .fixed-menu .nav-list ul {
     display: -webkit-box;
@@ -1328,23 +1283,28 @@ LODEARS
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    padding: 12px 0 0 0;
+    padding: 20px 30px 0 0;
     font-family: reg;
   }
   .fixed-menu-container .fixed-menu .nav-list ul li {
-    padding: 0 0 9px 0;
+    padding: 0 0 25px 0;
+    font-size: 15px;
   }
   .nav-bar {
-    padding: 18px 0 18px 0;
+    padding: 12px 0 12px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+  }
+  .nav-bar .logo {
+    width: 120px !important;
   }
   .nav-bar .zx-contain {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .nav-bar .for-mobile {
     display: -webkit-box;
@@ -1356,74 +1316,64 @@ LODEARS
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-right: auto;
+    margin-top: 6px;
   }
   .nav-bar .for-mobile .menu, .nav-bar .for-mobile .zx-search-btn {
-    width: 38px;
-    height: 38px;
-    margin: 12px 6px 6px 6px;
-    font-size: 14px;
-    color: #FFF;
-    background-color: #008bff;
+    text-decoration: none;
+    color: #252933;
+    font-size: 13px;
+    background-color: transparent;
     border: none;
     border-radius: 50%;
     outline: none;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
   }
-  .nav-bar .for-mobile .zx-on-card {
-    text-decoration: none;
-    color: #FFF;
-    width: 38px;
-    height: 38px;
-    background-color: #008bff;
-    border-radius: 50%;
-    margin: 12px 6px 6px 6px;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-  }
-  .nav-bar .for-mobile .zx-on-card i {
-    font-size: 12px;
-  }
-  .nav-bar .for-mobile .zx-on-card span {
-    width: 12px;
-    height: 12px;
-    font-family: reg;
-    font-size: 9px;
-    line-height: 1.5;
-    color: black;
-    background-color: #f7f7f7;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .nav-bar .for-mobile .menu i, .nav-bar .for-mobile .zx-search-btn i {
+    padding-left: 12px;
   }
   .nav-bar .zx-search-form {
     display: none;
   }
   .nav-bar .user-info {
+    font-size: 13px;
+  }
+  .nav-bar .user-info .account, .nav-bar .user-info .fav {
+    padding: 0;
+  }
+  .nav-bar .user-info .account i, .nav-bar .user-info .fav i {
+    padding-left: 12px;
+  }
+  .nav-bar .user-info .account span, .nav-bar .user-info .fav span {
     display: none;
+  }
+  .nav-bar .user-info .zx-on-card {
+    width: unset;
+    height: unset;
+    border: none;
+  }
+  .nav-bar .user-info .zx-on-card span {
+    top: -5px;
+    right: -6px;
+    width: 12px;
+    height: 12px;
+    font-size: 8px;
+  }
+  .nav-bar .user-info-top {
+    margin: 6px 0 0 0 !important;
   }
   .nav-bar .nav-list {
     display: none;
+  }
+  .fixed {
+    padding: 8px 0 9px 0 !important;
+  }
+  .zx-main-slider {
+    margin: 66px 0 0 0;
+  }
+  .mr-top {
+    margin: 99px 0 0 0 !important;
   }
   .owl-carousel .owl-dots {
     position: absolute;
@@ -1564,20 +1514,23 @@ LODEARS
   .sponsor .sponsor-logos .sponsor-logo {
     margin: 16px auto 16px auto;
   }
-  .footer .contact-us .zx-contain {
-    padding: 0 30px;
-  }
 }
 
 @media (max-width: 375px) {
   .nav-bar .logo {
     width: 160px;
   }
+  .mr-top {
+    margin: 90px 0 0 0 !important;
+  }
+  .zx-main-slider {
+    margin: 70px 0 0 0;
+  }
   .zx-main-slider .owl-carousel .owl-dots {
-    bottom: -20px;
+    bottom: 16px;
   }
   .categories {
-    margin: 50px 0 20px 0;
+    margin: 26px 0 20px 0;
   }
   .categories .zx-contain .category .img-container {
     margin: 0 0 12px 0;
@@ -1597,8 +1550,10 @@ LODEARS
   .sp-offers .zx-card .zx-card-info .price {
     text-align: center;
   }
+  .footer .subscribe-bar .zx-contain .img-container {
+    display: none;
+  }
   .footer .subscribe-bar .zx-contain h3 {
-    font-size: 14px;
     text-align: center;
   }
   .footer .subscribe-bar .zx-contain .e-mail {
