@@ -57,8 +57,8 @@ body {
 }
 
 .pre-loader img {
-  -webkit-animation: fade 5s infinite alternate;
-          animation: fade 5s infinite alternate;
+  -webkit-animation: fade .5s infinite alternate;
+          animation: fade .5s infinite alternate;
 }
 
 @-webkit-keyframes fade {
