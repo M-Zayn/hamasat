@@ -15,7 +15,6 @@ $(function() {
 
 
   $(window).scroll(function () {
-    if ($(window).width() > 992) {
       if ($(window).scrollTop() > $(".upper-bar").innerHeight() ) {
         $(".nav-bar").addClass("fixed");
         $(".zx-main-slider").addClass("mr-top");
@@ -30,7 +29,6 @@ $(function() {
         $(".zx-search-form").removeClass("zx-search-form-top");
         $(".user-info").addClass("user-info-top");
         $(".nav-list").removeClass("nav-list-top");
-    }
     }
     
     });
@@ -107,7 +105,7 @@ $('.sp-offers .owl-Carousel').owlCarousel({
     }
   }
 });
-$('.sponsor .sponsor-logos .owl-Carousel').owlCarousel({
+$('.co-companies .companies-logos .owl-Carousel').owlCarousel({
   autoPlay:false,
   items:7,
   loop:false,
