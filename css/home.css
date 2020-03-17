@@ -1360,6 +1360,10 @@ LODEARS
     height: 12px;
     font-size: 8px;
   }
+  .nav-bar .user-info .log-in {
+    top: 22px;
+    left: -25px;
+  }
   .nav-bar .user-info-top {
     margin: 6px 0 0 0 !important;
   }
