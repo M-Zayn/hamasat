@@ -1481,7 +1481,6 @@ body {
   .footer .contact-us .zx-contain .contact-info h3 {
     margin: 0 0 12px 0;
     cursor: pointer;
-    text-align: center;
   }
   .footer .contact-us .zx-contain .contact-info h3::after {
     content: '\f104';
@@ -1491,6 +1490,9 @@ body {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     padding: 0 6px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0px;
   }
   .footer .contact-us .zx-contain .contact-info h3.active {
     color: #008bff;
@@ -1503,10 +1505,12 @@ body {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     padding: 0 6px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0px;
   }
   .footer .contact-us .zx-contain .contact-info ul {
     display: none;
-    text-align: center;
   }
   .footer .contact-us .zx-contain .contact-info ul li {
     font-size: 14px;
