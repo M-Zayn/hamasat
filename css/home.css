@@ -1271,7 +1271,7 @@ LODEARS
     padding: 0;
   }
   .fixed-menu-container .fixed-menu .nav-list .nav-list-header .close {
-    color: #000;
+    color: #fff;
     opacity: .6;
     font-size: 16px;
   }
