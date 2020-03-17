@@ -1,7 +1,7 @@
 
 $(window).on("load", function () {
-  //$('body,html').scrollTop(0)
-  $(".demo").fadeOut(500, function () {
+  $('body,html').scrollTop(0)
+  $(".pre-loader").fadeOut(500, function () {
       $(this).remove();
       $('body').css("overflow-y", "visible");
 
@@ -119,7 +119,8 @@ $('.co-companies .companies-logos .owl-Carousel').owlCarousel({
     0:{
         items:2,
         loop:true,
-        dots:true
+        dots:true,
+        margin:12
     },
     600:{
         items:4,
